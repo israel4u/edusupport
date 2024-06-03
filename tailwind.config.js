@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto', 'inter'],
         anton: ['Anton', 'sans-serif']
+      },
+      spaciing: {
+        180: '32rem',
       }
     },
   },
