@@ -16,7 +16,7 @@
     <header id="header" class="relative bg-lightGray">
       <!-- Nav Container -->
       <nav
-        class="h-16 flex flex-col justify-center max-w-6xl mx-auto items-center space-y-10 md:flex-row md:justify-between md:space-y-0 md:px-4"
+        class="h-16 flex flex-col justify-center items-center max-w-6xl mx-auto space-y-10 md:flex-row md:justify-between md:space-y-0 md:px-4"
       >
         <!-- Logo -->
         <a href="#" class="font-anton text-deepBlue-900 text-2xl cursor-pointer"
@@ -63,41 +63,244 @@
           </div>
 
           <div class="btn">
-            <a
-              class="px-5 py-3 bg-deepBlue text-white rounded-lg cursor-pointer lowercase hover:bg-yellow hover:text-deepBlue hover:duration-500 hover:border-deepBlue"
-            >
-              start here
-            </a>
+            <a class="cta">start here</a>
           </div>
         </div>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="section-container">
       <div
-        class="container flex flex-col-reverse mx-auto p-6 space-y-10 md:flex-row md:space-y-0 md:space-x-10 max-w-6xl"
+        class="container flex flex-col-reverse items-center mx-auto p-6 space-y-10 md:flex-row md:space-y-0 md:space-x-10 max-w-6xl"
       >
         <!-- Hero text -->
         <div class="flex flex-col space-y-4 px-2 lg:space-y-10 lg:w-1/2">
           <h1
-            class="text-center uppercase text-4xl font-bold mt-10 md:text-5xl md:mt-14 md:text-left lg:text-6xl lg:mt-16 lg:text-left text-deepBlue"
+            class="text-center uppercase font-bold text-3xl mt-10 md:text-4xl md:mt-14 md:text-left lg:text-6xl lg:mt-16 lg:text-left text-deepBlue"
           >
             Providing supports for the academia
           </h1>
           <p
-            class="text-center text-xl mx-auto md:text-2xl md:text-left lg:text-left lg:text-3xl lg:mx-0"
+            class="text-center text-xl mx-auto md:text-2xl md:text-left lg:text-left lg:text-3xl lg:mx-0 text-gray-400"
           >
             Get all the support you need to complete projects effectively and
             timely.
           </p>
+
+          <!-- CTA -->
+          <div
+            class="flex flex-col space-y-6 text-center md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- 1st CTA -->
+            <a class="cta capitalize font-bold">start here</a>
+
+            <!-- 2nd CTA -->
+            <a class="cta-inverted font-bold capitalize">expore our work</a>
+          </div>
         </div>
 
         <!-- Hero Image -->
         <div
-          class="mt-10 space-y-4 mx-auto md:mt-14 lg:mt-16 lg:space-y-0 md:max-w-xl"
+          class="mt-10 space-y-4 mx-auto w-90 md:mt-14 lg:mt-16 lg:space-y-0 md:max-w-xl"
         >
           <img src="images/illustration-working.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="welcome" class="bg-yellow section-container">
+      <div
+        class="h-96 flex flex-col justify-center items-center max-w-6xl mx-auto px-6 space-y-8 md:flex-row md:space-y-0 md:space-x-20"
+      >
+        <h3
+          class="text-4xl md:text-8xl font-bold text-deepBlue-50 uppercase text-left"
+        >
+          <span class="hidden md:block">wel<br />come</span>
+          <span class="md:hidden">welcome</span>
+        </h3>
+
+        <div class="description space-y-12 md:space-y-8">
+          <p class="text-3xl text-center md:text-left md:text-4xl leading-6">
+            Welcome to Global Educational and Communication Services, provider
+            of tertiary educational services.
+          </p>
+          <div class="text-center md:text-left text-2xl">
+            <a href="#" class="cta capitalize">read more...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services section-container">
+      <!-- Our services container-->
+      <div class="heading">
+        <h2
+          class="leading-9 text-4xl font-bold text-center max-w-6xl mx-auto mb-8 text-deepBlue"
+        >
+          Our Services
+        </h2>
+        <div class="border-b border-gray-400 w-44 mx-auto mb-10"></div>
+      </div>
+      <div
+        class="flex flex-col mx-auto md:flex-row md:justify-between space-y-12 p-6 md:space-y-0 max-w-6xl"
+      >
+        <!-- Image/picture of services -->
+        <div class="illustration md:w-1/2">
+          <img src="images/service.svg" alt="Our Services" />
+        </div>
+
+        <!-- services text contents -->
+        <div class="services-text-container mx-auto">
+          <div class="academics">
+            <div class="undergraduate mb-4">
+              <h3 class="text-xl uppercase font-bold mt-4 mb-2 text-deepBlue">
+                undergraduate
+              </h3>
+              <ul class="text-gray-600">
+                <li>Project/Assignments</li>
+                <li>Term/Semester Paper</li>
+              </ul>
+            </div>
+
+            <div class="post-graduate mb-4">
+              <h3 class="text-xl uppercase font-bold mt-4 mb-2 text-deepBlue">
+                postgraduate
+              </h3>
+              <ul class="text-gray-600">
+                <li>Proposal</li>
+                <li>Project/Dissertation/Thesis</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="feasibility">
+            <h3 class="text-xl uppercase font-bold mt-4 mb-2 text-deepBlue">
+              feasibility
+            </h3>
+            <ul class="text-gray-600">
+              <li>Editing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="blog"
+      class="bg-gradient-to-tl from-green-900 to-black h-auto w-full relative"
+    >
+      <!-- Blog container -->
+      <img
+        src="https://images.pexels.com/photos/96627/pexels-photo-96627.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Our Blog"
+        class="w-full h-full object-cover absolute mix-blend-overlay"
+      />
+      <div class="max-w-6xl mx-auto py-20">
+        <div class="title mb-20">
+          <h3 class="pt-2 text-4xl text-center text-white font-bold">
+            Our Blog
+          </h3>
+          <p class="text-2xl text-center text-white mt-4">
+            Stay up-to-date with our weekly newsletter.
+          </p>
+        </div>
+
+        <!-- Blogs -->
+        <div
+          class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-10"
+        >
+          <!-- blog 1 -->
+          <div
+            class="flex flex-col space-y-2 w-1/3 pb-10 mb-10 bg-gray-900 group"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/210661/pexels-photo-210661.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Writing"
+                class="bg-none w-full duration-200 md:block group-hover:scale-105"
+              />
+              <!-- Item Gradient -->
+              <div class="item-gradient"></div>
+            </div>
+            <div class="blog-text mx-auto space-y-4 px-4">
+              <h3
+                class="text-xl text-gray-400 font-bold shadow-black shadow-2xl uppercase mt-10"
+              >
+                The art of writing
+              </h3>
+              <div class="mx-2 border-b border-white"></div>
+              <p class="text-white text-md pb-4">
+                The Art of Writing encompasses the skills, techniques, and
+                practices involved in effectively expressing ideas through
+                written language.
+              </p>
+              <div class="btn">
+                <a class="cta">continue..</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- blog 2 -->
+          <div
+            class="flex flex-col space-y-2 w-1/3 pb-10 mb-10 bg-gray-900 group"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/1181415/pexels-photo-1181415.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Listening"
+                class="bg-cover w-full duration-200 md:block group-hover:scale-105"
+              />
+
+              <!-- Item Gradient -->
+              <div class="item-gradient"></div>
+            </div>
+            <div class="blog-text mx-auto space-y-4 px-4">
+              <h3
+                class="text-xl text-gray-400 font-bold shadow-black shadow-2xl uppercase mt-10"
+              >
+                Listening
+              </h3>
+              <div class="mx-2 border-b border-white"></div>
+              <p class="text-white text-md pb-4">
+                Listening is an active process of receiving, interpreting, and
+                responding to spoken or non-verbal messages.
+              </p>
+              <div class="btn">
+                <a class="cta">continue..</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- blog 3 -->
+          <div
+            class="flex flex-col space-y-2 w-1/3 pb-10 mb-10 bg-gray-900 group"
+          >
+            <div class="relative">
+              <img
+                src="https://images.pexels.com/photos/6190661/pexels-photo-6190661.jpeg?auto=compress&cs=tinysrgb&w=600"
+                class="bg-cover w-full duration-200 md:block group-hover:scale-105"
+              />
+
+              <!-- Item Gradient -->
+              <div class="item-gradient"></div>
+            </div>
+            <div class="blog-text mx-auto space-y-4 px-4">
+              <h3
+                class="text-xl text-gray-400 font-bold shadow-black shadow-2xl uppercase mt-10"
+              >
+                meditation
+              </h3>
+              <div class="mx-2 border-b border-white"></div>
+              <p class="text-white text-md pb-4">
+                Meditation is a practice that involves focusing the mind and
+                eliminating distractions to achieve a state of mental clarity,
+                relaxation, and heightened awareness.
+              </p>
+              <div class="btn">
+                <a class="cta">continue..</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

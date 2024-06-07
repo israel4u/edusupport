@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cta {
+  @apply px-5 py-3 bg-deepBlue text-white rounded-lg cursor-pointer hover:bg-yellow hover:text-deepBlue hover:duration-500 hover:border-deepBlue;         
+}
+
+.cta-inverted {
+  @apply px-5 py-3 bg-lightGray text-deepBlue rounded-lg cursor-pointer hover:bg-yellow hover:text-deepBlue hover:duration-500 hover:border-deepBlue;         
+}
+
+.section-container {
+  @apply mb-40 mx-auto;
+}
+
+.item-gradient {
+  @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+}
+
+/* .blog{
+  background-image: url('../images/blog.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+/* .blog::after {
+  display: table;
+  content: '';
+  height: 100%;
+  color: #000;
+  padding: 5rem;
+} */
