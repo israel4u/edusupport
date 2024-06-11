@@ -126,7 +126,7 @@
             of tertiary educational services.
           </p>
           <div class="text-center md:text-left text-2xl">
-            <a href="#" class="cta capitalize">read more...</a>
+            <a href="#" class="cta hover:bg-lightGray">read more...</a>
           </div>
         </div>
       </div>
@@ -211,7 +211,7 @@
         >
           <!-- blog 1 -->
           <div
-            class="flex flex-col space-y-2 w-1/3 pb-10 mb-10 bg-gray-900 group"
+            class="flex flex-col space-y-2 md:w-1/3 pb-10 mb-10 px-4 bg-gray-900 group"
           >
             <div class="relative">
               <img
@@ -242,7 +242,7 @@
 
           <!-- blog 2 -->
           <div
-            class="flex flex-col space-y-2 w-1/3 pb-10 mb-10 bg-gray-900 group"
+            class="flex flex-col space-y-2 md:w-1/3 pb-10 mb-10 px-4 bg-gray-900 group"
           >
             <div class="relative">
               <img
@@ -273,12 +273,13 @@
 
           <!-- blog 3 -->
           <div
-            class="flex flex-col space-y-2 w-1/3 pb-10 mb-10 bg-gray-900 group"
+            class="flex flex-col space-y-2 md:w-1/3 pb-10 mb-10 px-4 bg-gray-900 group"
           >
             <div class="relative">
               <img
                 src="https://images.pexels.com/photos/6190661/pexels-photo-6190661.jpeg?auto=compress&cs=tinysrgb&w=600"
                 class="bg-cover w-full duration-200 md:block group-hover:scale-105"
+                alt="Meditation"
               />
 
               <!-- Item Gradient -->
@@ -304,5 +305,50 @@
         </div>
       </div>
     </section>
+
+    <footer id="footer" class="footer py-32 h-full w-full bg-lightGray">
+      <div
+        class="footer-container max-w-6xl flex flex-col space-y-6 text-center md:flex-row md:items-start md:space-y-0 md:space-x-8 md:text-left mx-auto"
+      >
+        <!-- Company -->
+        <div class="md:w-1/3">
+          <!-- Logo -->
+          <a
+            href="#"
+            class="font-anton text-deepBlue-900 text-2xl cursor-pointer"
+            >G-eServices</a
+          >
+          <p>Giving support that moves you forward...</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="md:w-1/3">
+          <ul class="">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Welcome</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div
+          class="flex flex-col space-y-4 px-4 md:flex-row justify-center items-center md:space-y-0 md:w-1/3"
+        >
+          <input
+            type="text"
+            name="mailing"
+            id="mailing"
+            placeholder="Enter your email address here"
+            class="w-full h-12 md:w-64 rounded-md px-2"
+          />
+          
+            <a
+              href="#"
+              class="w-full px-4 py-3 rounded-md md:w-20 bg-deepBlue text-lightGray hover:bg-yellow hover:text-deepBlue duration-200"
+              >Send</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
